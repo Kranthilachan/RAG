@@ -9,9 +9,6 @@ from langchain_community.vectorstores import Chroma, FAISS
 from dotenv import load_dotenv
 import os
 
-
-
-# Load environment variables
 load_dotenv()
 
 def load_data():
