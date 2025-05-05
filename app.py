@@ -51,14 +51,10 @@ def vector():
         chroma_db_impl="duckdb+parquet",
         persist_directory="./chroma_db"
     ))
-# In your app.py replace Chroma with:
+
 
 
 def create_vectorstore(texts, embeddings):
     return FAISS.from_documents(documents=texts, embedding=embeddings)
-
-# Later to save/load:
-# vectorstore.save_local("faiss_index")
-# loaded_store = FAISS.load_local("faiss_index", embeddings)
 
 
